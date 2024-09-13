@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DATAbase</title>
+        <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" integrity="sha512-nMNlpuaDPrqlEls3IX/Q56H36qvBASwb3ipuo3MxeWbsQB1881ox0cRv7UPTgBlriqoynt35KjEwgGUeUXIPnw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./assets/css/style.css">
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <header>
+                <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                    <div class="container">
+                        <button class="navbar-btn d-lg-none d-block" type="button">
+                            <img src="./assets/img/bars.svg" alt="Bars" width="30">
+                        </button>
+                        <a class="navbar-brand" href="./index.html">LOGO</a>
+                        <button class="navbar-btn d-lg-none d-block opacity-0" type="button">
+                            <img src="./assets/img/bars.svg" alt="Bars" width="30">
+                        </button>
+                        <div class="collapse navbar-collapse gap-5 justify-content-lg-end justify-content-between"
+                            id="navbarSupportedContent">
+                            <button class="navbar-btn d-lg-none d-block" type="button">
+                                <img src="./assets/img/bars.svg" alt="Bars" width="30">
+                            </button>
+                            <ul class="navbar-nav mb-2 mb-lg-0">
+                                <li class="nav-item d-lg-none d-block">
+                                    <a class="nav-link" href="./index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">About Us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Price</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./contact.html">Contact</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link d-flex align-items-center lh-1 gap-1"
+                                        href="#"><span>ENG</span><img src="./assets/img/gb.png" alt="Flag"
+                                            class="flag"></a>
+                                </li>
+                            </ul>
+                            <div class="d-flex align-items-center gap-2 flex-lg-row flex-column h-btns">
+                                <a href="#" class="btn btn-outline-dark flex-grow-1 text-nowrap">Sign In</a>
+                                <a href="./get-started.html" class="btn btn-dark flex-grow-1 text-nowrap">Get
+                                    Started</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <main>
+                <section class="py-md-5 py-4 mb-5 get-started-sec">
+                    <div class="container">
+                        <form action="" method="post">
+                            <div class="tab" id="tab-1">
+                                <div class="select-flex d-flex flex-column">
+                                    <div class="d-flex flex-column align-items-center text-center sf-info">
+                                        <h2 class="mb-0 h-title paytone">Select Databases</h2>
+                                        <p class="mb-0 h-desc">Lorem ipsum dolor sit amet consectetur. Tincidunt
+                                            ermentum nam bibendum porta.</p>
+                                    </div>
+                                    <div class="databases">
+                                        <label class="database">
+                                            <input type="checkbox" value="Azure SQL" name="databases[]">
+                                            <img src="./assets/img/db-1.svg" alt="DB">
+                                        </label>
+                                        <label class="database">
+                                            <input type="checkbox" value="Microsoft SQL Server" name="databases[]">
+                                            <img src="./assets/img/db-2.svg" alt="DB">
+                                        </label>
+                                        <label class="database">
+                                            <input type="checkbox" value="aws SQL Server" name="databases[]">
+                                            <img src="./assets/img/db-3.svg" alt="DB">
+                                        </label>
+                                        <label class="database">
+                                            <input type="checkbox" value="PostgreSQL" name="databases[]">
+                                            <img src="./assets/img/db-4.svg" alt="DB">
+                                        </label>
+                                        <label class="database">
+                                            <input type="checkbox" value="MySQL" name="databases[]">
+                                            <img src="./assets/img/db-5.svg" alt="DB">
+                                        </label>
+                                        <label class="database">
+                                            <input type="checkbox" value="mongoDB" name="databases[]">
+                                            <img src="./assets/img/db-6.svg" alt="DB">
+                                        </label>
+                                        <label class="database custom-db">
+                                            <input type="checkbox" value="Custom Database" name="databases[]">
+                                            <span class="fw-medium">Custom Database</span>
+                                        </label>
+                                    </div>
+                                    <div
+                                        class="d-flex align-items-center justify-content-center gap-2 mx-auto get-started-btns">
+                                        <button type="button" class="btn btn-outline-dark flex-grow-1">Back</button>
+                                        <button type="button" class="btn btn-dark flex-grow-1"
+                                            onclick="changeTab('tab-2')">Next</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab" id="tab-2">
+                                <div class="select-flex d-flex flex-column">
+                                    <div class="d-flex flex-column align-items-center text-center sf-info">
+                                        <h2 class="mb-0 h-title paytone">Fill out the form</h2>
+                                        <p class="mb-0 h-desc">Lorem ipsum dolor sit amet consectetur. Tincidunt
+                                            ermentum nam bibendum porta.</p>
+                                    </div>
+                                    <div class="form-box">
+                                        <div class="form-fields">
+                                            <div class="form-group d-flex flex-column gap-1">
+                                                <label for="interval">How often do you want to backup?</label>
+                                                <select name="interval" id="interval" class="form-control form-select">
+                                                    <option value="Daily">Daily</option>
+                                                    <option value="Weekly">Weekly</option>
+                                                    <option value="Monthly">Monthly</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group d-flex flex-column gap-1">
+                                                <label for="size">How large is your database?</label>
+                                                <select name="size" id="size" class="form-control form-select">
+                                                    <option value="1GB">1GB</option>
+                                                    <option value="5GB">5GB</option>
+                                                    <option value="10GB">10GB</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group d-flex flex-column gap-1">
+                                                <label for="sensitive_info">Do you store sensitive information?</label>
+                                                <div class="d-flex radio-flex">
+                                                    <div class="form-check form-check-inline me-0">
+                                                        <input class="form-check-input" type="radio" name="sensitive_info" id="yes" value="Yes">
+                                                        <label class="form-check-label" for="yes">Yes</label>
+                                                    </div>
+                                                    <div class="form-check form-check-inline me-0">
+                                                        <input class="form-check-input" type="radio" name="sensitive_info" id="no" value="No">
+                                                        <label class="form-check-label" for="no">No</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group d-flex flex-column gap-1">
+                                                <label for="email">Whats your Email?</label>
+                                                <input type="email" class="form-control error-inp" name="email" id="email" placeholder="Email">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="d-flex align-items-center justify-content-center gap-2 mx-auto get-started-btns">
+                                        <button type="button" class="btn btn-outline-dark flex-grow-1"
+                                            onclick="changeTab('tab-2')">Back</button>
+                                        <button type="button" class="btn btn-dark flex-grow-1"
+                                            onclick="changeTab('tab-3')">Next</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab" id="tab-3">
+                                <div class="select-flex d-flex flex-column">
+                                    <div class="d-flex flex-column align-items-center text-center sf-info">
+                                        <h2 class="mb-0 h-title paytone">Thank you</h2>
+                                        <p class="mb-0 h-desc">For your interest in our product!</p>
+                                        <p class="mb-0 h-desc">We will get back to you shortly! :)</p>
+                                    </div>
+                                    <div
+                                        class="d-flex align-items-center justify-content-center gap-2 mx-auto get-started-btns">
+                                        <a href="./index.html" class="btn btn-dark flex-grow-1">Great</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+            </main>
+            <footer>
+                <div class="container">
+                    <div class="d-flex justify-content-between flex-lg-row flex-column foot-flex">
+                        <div class="d-flex flex-column gap-2 justify-content-between">
+                            <a href="./index.html" class="f-logo">LOGO</a>
+                            <div class="d-flex.flex-column gap-2">
+                                <p class="mb-0">Tincidunt ermentum nam bibendum porta.</p>
+                                <p class="mb-0">Tincidunt ermentum nam bibendum porta.</p>
+                            </div>
+                        </div>
+                        <div class="f-right">
+                            <div class="f-sec">
+                                <h3 class="h-title mb-0 paytone">Menu</h3>
+                                <div class="f-links">
+                                    <a href="#">About Us</a>
+                                    <a href="#">Price</a>
+                                    <a href="./contact.html">Contact</a>
+                                </div>
+                            </div>
+                            <div class="f-sec">
+                                <h3 class="h-title mb-0 paytone">Contact Us</h3>
+                                <div class="f-links">
+                                    <a class="d-flex align-items-center" href="#"><img src="./assets/img/Envelope.svg" alt="F Icon" width="24"><span>email@gmail.com</span></a>
+                                    <a class="d-flex align-items-center" href="#"><img src="./assets/img/Phone.svg" alt="F Icon" width="24"><span>+X (XXX) XXX-XX</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <script src="./assets/js/jquery-3.6.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js" integrity="sha512-2ImtlRlf2VVmiGZsjm9bEyhjGW4dU7B6TNwh/hx/iSByxNENtj3WVE6o/9Lj4TJeVXPi4bnOIMXFIJJAeufa0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="./assets/js/bootstrap.bundle.min.js"></script>
+        <script src="./assets/js/script.js"></script>
+    </body>
+
+</html>
