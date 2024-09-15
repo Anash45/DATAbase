@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>DATAbase</title>
         <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
-        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="./assets/css/style.css?v=1">
     </head>
 
     <body>
@@ -39,10 +39,27 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="./contact.html">Contact</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link d-flex align-items-center lh-1 gap-1"
-                                        href="#"><span>ENG</span><img src="./assets/img/gb.png" alt="Flag"
-                                            class="flag"></a>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link d-flex dropdown-toggle align-items-center lh-1 gap-1" href="#"
+                                        id="languageDropdown" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <span>ENG</span>
+                                        <img src="./assets/img/gb.svg" alt="Flag" class="flag">
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                                        <li>
+                                            <a class="dropdown-item d-flex align-items-center lh-1 gap-1" href="#">
+                                                <span>ENG</span>
+                                                <img src="./assets/img/gb.svg" alt="Flag" class="flag">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item d-flex align-items-center lh-1 gap-1" href="#">
+                                                <span>ES</span>
+                                                <img src="./assets/img/es.svg" alt="Flag" class="flag">
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </li>
                             </ul>
                             <div class="d-flex align-items-center gap-2 flex-lg-row flex-column h-btns">
@@ -71,9 +88,11 @@
                                             turpis commodo mattis fermentum nam bibendum porta.</p>
                                     </div>
                                     <div class="d-flex align-items-center gap-2">
-                                        <a href="./get-started.html" class="btn btn-dark flex-grow-1 flex-grow-lg-0 text-nowrap">Get
-                                            Started</a>
-                                        <a href="#" class="btn btn-outline-dark flex-grow-1 flex-grow-lg-0 text-nowrap">Learn More</a>
+                                        <a href="./get-started.html"
+                                            class="btn btn-dark flex-grow-1 flex-grow-lg-0 text-nowrap">Get Started</a>
+                                        <a href="#"
+                                            class="btn btn-outline-dark flex-grow-1 flex-grow-lg-0 text-nowrap">Learn
+                                            More</a>
                                     </div>
                                 </div>
                                 <div class="numbers-flex d-lg-flex d-none">
@@ -228,8 +247,10 @@
                             <div class="f-sec">
                                 <h3 class="h-title mb-0 paytone">Contact Us</h3>
                                 <div class="f-links">
-                                    <a class="d-flex align-items-center" href="#"><img src="./assets/img/Envelope.svg" alt="F Icon" width="24"><span>email@gmail.com</span></a>
-                                    <a class="d-flex align-items-center" href="#"><img src="./assets/img/Phone.svg" alt="F Icon" width="24"><span>+X (XXX) XXX-XX</span></a>
+                                    <a class="d-flex align-items-center" href="#"><img src="./assets/img/Envelope.svg"
+                                            alt="F Icon" width="24"><span>email@gmail.com</span></a>
+                                    <a class="d-flex align-items-center" href="#"><img src="./assets/img/Phone.svg"
+                                            alt="F Icon" width="24"><span>+X (XXX) XXX-XX</span></a>
                                 </div>
                             </div>
                         </div>

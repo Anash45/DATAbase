@@ -6,8 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>DATAbase</title>
         <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" integrity="sha512-nMNlpuaDPrqlEls3IX/Q56H36qvBASwb3ipuo3MxeWbsQB1881ox0cRv7UPTgBlriqoynt35KjEwgGUeUXIPnw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css"
+            integrity="sha512-nMNlpuaDPrqlEls3IX/Q56H36qvBASwb3ipuo3MxeWbsQB1881ox0cRv7UPTgBlriqoynt35KjEwgGUeUXIPnw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./assets/css/style.css?v=1">
     </head>
 
     <body>
@@ -40,10 +42,27 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="./contact.html">Contact</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link d-flex align-items-center lh-1 gap-1"
-                                        href="#"><span>ENG</span><img src="./assets/img/gb.png" alt="Flag"
-                                            class="flag"></a>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link d-flex dropdown-toggle align-items-center lh-1 gap-1" href="#"
+                                        id="languageDropdown" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <span>ENG</span>
+                                        <img src="./assets/img/gb.svg" alt="Flag" class="flag">
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                                        <li>
+                                            <a class="dropdown-item d-flex align-items-center lh-1 gap-1" href="#">
+                                                <span>ENG</span>
+                                                <img src="./assets/img/gb.svg" alt="Flag" class="flag">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item d-flex align-items-center lh-1 gap-1" href="#">
+                                                <span>ES</span>
+                                                <img src="./assets/img/es.svg" alt="Flag" class="flag">
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </li>
                             </ul>
                             <div class="d-flex align-items-center gap-2 flex-lg-row flex-column h-btns">
@@ -133,18 +152,21 @@
                                                 <label for="sensitive_info">Do you store sensitive information?</label>
                                                 <div class="d-flex radio-flex">
                                                     <div class="form-check form-check-inline me-0">
-                                                        <input class="form-check-input" type="radio" name="sensitive_info" id="yes" value="Yes">
+                                                        <input class="form-check-input" type="radio"
+                                                            name="sensitive_info" id="yes" value="Yes">
                                                         <label class="form-check-label" for="yes">Yes</label>
                                                     </div>
                                                     <div class="form-check form-check-inline me-0">
-                                                        <input class="form-check-input" type="radio" name="sensitive_info" id="no" value="No">
+                                                        <input class="form-check-input" type="radio"
+                                                            name="sensitive_info" id="no" value="No">
                                                         <label class="form-check-label" for="no">No</label>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="form-group d-flex flex-column gap-1">
                                                 <label for="email">Whats your Email?</label>
-                                                <input type="email" class="form-control error-inp" name="email" id="email" placeholder="Email">
+                                                <input type="email" class="form-control error-inp" name="email"
+                                                    id="email" placeholder="Email">
                                             </div>
                                         </div>
                                     </div>
@@ -196,8 +218,10 @@
                             <div class="f-sec">
                                 <h3 class="h-title mb-0 paytone">Contact Us</h3>
                                 <div class="f-links">
-                                    <a class="d-flex align-items-center" href="#"><img src="./assets/img/Envelope.svg" alt="F Icon" width="24"><span>email@gmail.com</span></a>
-                                    <a class="d-flex align-items-center" href="#"><img src="./assets/img/Phone.svg" alt="F Icon" width="24"><span>+X (XXX) XXX-XX</span></a>
+                                    <a class="d-flex align-items-center" href="#"><img src="./assets/img/Envelope.svg"
+                                            alt="F Icon" width="24"><span>email@gmail.com</span></a>
+                                    <a class="d-flex align-items-center" href="#"><img src="./assets/img/Phone.svg"
+                                            alt="F Icon" width="24"><span>+X (XXX) XXX-XX</span></a>
                                 </div>
                             </div>
                         </div>
@@ -206,7 +230,9 @@
             </footer>
         </div>
         <script src="./assets/js/jquery-3.6.1.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js" integrity="sha512-2ImtlRlf2VVmiGZsjm9bEyhjGW4dU7B6TNwh/hx/iSByxNENtj3WVE6o/9Lj4TJeVXPi4bnOIMXFIJJAeufa0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"
+            integrity="sha512-2ImtlRlf2VVmiGZsjm9bEyhjGW4dU7B6TNwh/hx/iSByxNENtj3WVE6o/9Lj4TJeVXPi4bnOIMXFIJJAeufa0A=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="./assets/js/bootstrap.bundle.min.js"></script>
         <script src="./assets/js/script.js"></script>
     </body>

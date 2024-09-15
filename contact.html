@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css"
             integrity="sha512-nMNlpuaDPrqlEls3IX/Q56H36qvBASwb3ipuo3MxeWbsQB1881ox0cRv7UPTgBlriqoynt35KjEwgGUeUXIPnw=="
             crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="./assets/css/style.css?v=1">
     </head>
 
     <body>
@@ -42,10 +42,27 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="./contact.html">Contact</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link d-flex align-items-center lh-1 gap-1"
-                                        href="#"><span>ENG</span><img src="./assets/img/gb.png" alt="Flag"
-                                            class="flag"></a>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link d-flex dropdown-toggle align-items-center lh-1 gap-1" href="#"
+                                        id="languageDropdown" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <span>ENG</span>
+                                        <img src="./assets/img/gb.svg" alt="Flag" class="flag">
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                                        <li>
+                                            <a class="dropdown-item d-flex align-items-center lh-1 gap-1" href="#">
+                                                <span>ENG</span>
+                                                <img src="./assets/img/gb.svg" alt="Flag" class="flag">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item d-flex align-items-center lh-1 gap-1" href="#">
+                                                <span>ES</span>
+                                                <img src="./assets/img/es.svg" alt="Flag" class="flag">
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </li>
                             </ul>
                             <div class="d-flex align-items-center gap-2 flex-lg-row flex-column h-btns">

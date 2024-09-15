@@ -66,7 +66,31 @@ body {
 }
 
 .flag {
-    height: 28px;
+    height: 16px;
+}
+
+.dropdown-menu{
+    min-width: auto;
+    width: fit-content;
+    padding: 4px 0 !important;
+    border-radius: 5px;
+    border: 0 !important;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+}
+.dropdown-toggle::after{
+    content: unset;
+}
+
+.dropdown-item:active{
+    color: #373737;
+}
+.dropdown-item{
+    justify-content: space-between;
+    padding: 10px 16px;
+}
+
+.dropdown-item:hover{
+    background-color: #E2EAFC;
 }
 
 .navbar-nav {
